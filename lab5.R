@@ -14,3 +14,8 @@ attach(data1)
 #Q1
 hist(x2, main = "Histogram for No of Shareholders")
 abline(h=0)
+
+
+#Q2 
+#length = noofclasses + 1
+hist(x2, main = "Histogram for No of Shareholders", breaks = seq(130,270, length = 8), right =FALSE)
