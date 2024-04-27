@@ -53,3 +53,22 @@ plot(mid, freq, type="o", main="Freq polygon for number of shareholders", xlab="
 
 plot(mid, freq, type="p", main="Freq polygon for number of shareholders", xlab="shareholders", ylab="frequency", ylim=c(0, max(freq)))
 
+
+#Q5
+cum.freq <- cumsum(freq)
+cum.freq
+
+#empty vector
+new <- c()
+for(i in 1:length((breaks))){
+  if(i==1){
+    new[i] = 0
+  }else{
+    new[i] = cum.freq[i-1]
+  }
+}
+
+plot(breaks, new, type="o", main="frequency ploygon for no of shareholders", ylab="cumulative frequency", ylim = c(0, max(cum.freq)))
+
+cbind(Upper=breaks,Cumfreq=new)
+
