@@ -11,3 +11,6 @@ fix(data1)
 
 attach(data1)
 
+#Q1
+hist(x2, main = "Histogram for No of Shareholders")
+abline(h=0)
