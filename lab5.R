@@ -41,3 +41,15 @@ for(i in 1:length(breaks)-1){
 #paste-concatenate with zeros
 
 cbind(Classes=classes, Frequency=freq)
+
+#Q4
+#draw in the same plot
+lines(histogram$mids,freq)
+
+#new plot
+plot(mid, freq, type="l", main="Freq polygon for number of shareholders", xlab="shareholders", ylab="frequency", ylim=c(0, max(freq)))
+
+plot(mid, freq, type="o", main="Freq polygon for number of shareholders", xlab="shareholders", ylab="frequency", ylim=c(0, max(freq)))
+
+plot(mid, freq, type="p", main="Freq polygon for number of shareholders", xlab="shareholders", ylab="frequency", ylim=c(0, max(freq)))
+
